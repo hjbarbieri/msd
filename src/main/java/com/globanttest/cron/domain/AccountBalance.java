@@ -23,11 +23,9 @@ public class AccountBalance {
 	public String getAmount() {
 		return amount;
 	}
-
-	public Long getTransactionId() {
-		return accountId;
-	}
-
+	
+	
+	
 	public String getAccountType() {
 		return accountType;
 	}

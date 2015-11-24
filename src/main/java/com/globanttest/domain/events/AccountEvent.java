@@ -1,8 +1,12 @@
-package com.globanttest.cron.events;
+package com.globanttest.domain.events;
 
+
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class AccountEvent {
+public class AccountEvent implements Serializable{
+
+	private static final long serialVersionUID = 1L;
 
 	private BigDecimal amount;
 	private Long accountId;
@@ -26,5 +30,13 @@ public class AccountEvent {
 	public AccountEventType getAccountType() {
 		return accountType;
 	}
+
+	@Override
+	public String toString() {
+		return "AccountEvent [amount=" + amount + ", accountId=" + accountId
+				+ ", accountType=" + accountType + "]";
+	}
+	
+	
 
 }
